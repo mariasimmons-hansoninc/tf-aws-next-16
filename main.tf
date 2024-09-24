@@ -58,7 +58,7 @@ resource "aws_lambda_function" "this" {
   description   = "Managed by Terraform Next.js"
   role          = aws_iam_role.lambda[each.key].arn
   handler       = lookup(each.value, "handler", "")
-  runtime       = lookup(each.value, "runtime", var.lambda_runtime)
+  runtime       = "nodejs16.x"
   memory_size   = lookup(each.value, "memory", var.lambda_memory_size)
   timeout       = var.lambda_timeout
   tags          = var.tags
