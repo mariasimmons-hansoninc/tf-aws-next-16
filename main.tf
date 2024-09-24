@@ -283,8 +283,8 @@ data "aws_iam_policy_document" "access_static_deployment" {
 module "next_image" {
   count = var.create_image_optimization ? 1 : 0
 
-  source  = "milliHQ/next-js-image-optimization/aws"
-  version = ">= 12.1.0"
+  source  = "git::https://github.com/mariasimmons-hansoninc/tf-aws-next-io.git"
+  #version = ">= 12.1.0"
 
   cloudfront_create_distribution = false
 
