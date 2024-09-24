@@ -1,10 +1,7 @@
 # Terraform Next.js Image component example
 
-> **Warning:** This example is not fully updated for the upcoming `v1.0.0` release.  
-> We recommend following the [Atomic Deployments Example](https://github.com/milliHQ/terraform-aws-next-js/tree/main/examples/atomic-deployments) instead until this example gets an update.
-
 This example shows the usage of Next.js together with the `next/image` component.
-You can find the full example code on [GitHub](https://github.com/milliHQ/terraform-aws-next-js/tree/main/examples/next-image).
+You can find the full example code on [GitHub](https://github.com/milliHQ/terraform-aws-next-js/tree/v0.x/examples/next-image).
 
 > **Note:** Support for `next/image` component is enabled in the Terraform Next.js module by default and requires no extra config other than the standard setup!
 
@@ -13,7 +10,7 @@ You can find the full example code on [GitHub](https://github.com/milliHQ/terraf
 Download the files from the example app:
 
 ```sh
-yarn create next-app --example https://github.com/milliHQ/terraform-aws-next-js/tree/main/examples/next-image my-app
+yarn create next-app --example https://github.com/milliHQ/terraform-aws-next-js/tree/v0.x/examples/next-image my-app
 
 cd my-app
 ```

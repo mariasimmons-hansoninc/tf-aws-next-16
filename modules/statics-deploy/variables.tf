@@ -1,6 +1,14 @@
+variable "static_files_archive" {
+  type = string
+}
+
 variable "deploy_trigger_module_version" {
   type    = string
-  default = "1.0.0-canary.5"
+  default = "0.13.2"
+}
+
+variable "expire_static_assets" {
+  type = number
 }
 
 variable "cloudfront_id" {
@@ -18,59 +26,9 @@ variable "lambda_role_permissions_boundary" {
   default = null
 }
 
-################
-# CloudFormation
-################
-
-variable "cloudformation_role_arn" {
-  description = "Role ARN that should be assigned to the CloudFormation substacks created by CDK."
-  type        = string
-}
-
-######################
-# Multiple deployments
-######################
-
-variable "enable_multiple_deployments" {
-  type = bool
-}
-
-variable "multiple_deployments_base_domain" {
-  type    = string
-  default = null
-}
-
-#####################
-# Deployment database
-#####################
-
-variable "dynamodb_region" {
-  type = string
-}
-
-variable "dynamodb_table_aliases_arn" {
-  type = string
-}
-
-variable "dynamodb_table_aliases_name" {
-  type = string
-}
-
-variable "dynamodb_table_deployments_arn" {
-  type = string
-}
-
-variable "dynamodb_table_deployments_name" {
-  type = string
-}
-
-#####
-# SNS
-#####
-
-variable "deploy_status_sns_topic_arn" {
-  description = "ARN of the SNS topic where CloudFormation status changes should be sent to."
-  type        = string
+variable "use_awscli_for_static_upload" {
+  type    = bool
+  default = false
 }
 
 ###########

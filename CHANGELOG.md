@@ -2,27 +2,18 @@
 
 ## [Unreleased]
 
-## [1.0.0-canary.5] - 2022-07-12
+## [0.13.2] - 2022-05-31
 
-- Adds alias for profile, improves error message ([#344](https://github.com/milliHQ/terraform-aws-next-js/pull/344))
+- Fixes a regression from the `0.13.1` release, where the `@vercel/nft` was not available ([#322](https://github.com/milliHQ/terraform-aws-next-js/pull/322))
 
-## [1.0.0-canary.4] - 2022-06-07
+## [0.13.1] - 2022-05-30
 
-- Correctly increase version number of new packages
+- Update `@vercel/nft` from 0.10.0 to 0.19.1 ([#320](https://github.com/milliHQ/terraform-aws-next-js/pull/320))
 
-## [1.0.0-canary.3] - 2022-06-07
+## [0.13.0] - 2022-05-28
 
-- Fixes deployments without Lambdas ([#325](https://github.com/milliHQ/terraform-aws-next-js/pull/325))
-- Use CloudFormation role ([#324](https://github.com/milliHQ/terraform-aws-next-js/pull/324))
-- Improve CLI ([#323](https://github.com/milliHQ/terraform-aws-next-js/pull/323))
-- Fix runtime bundle ([#322](https://github.com/milliHQ/terraform-aws-next-js/pull/322))
-
-## [1.0.0-canary.2] - 2022-05-31
-
-- Adds static prefix to files served from S3 ([#321](https://github.com/milliHQ/terraform-aws-next-js/pull/321))
-- Add CLI commands ([#317](https://github.com/milliHQ/terraform-aws-next-js/pull/317))
-- No longer require reserved concurrency ([#319](https://github.com/milliHQ/terraform-aws-next-js/pull/319), [#251](https://github.com/milliHQ/terraform-aws-next-js/issues/251))
-- Use CLI and CDK for deployments ([#300](https://github.com/milliHQ/terraform-aws-next-js/pull/300))
+- Adds support for nodejs16.x runtime ([#318](https://github.com/milliHQ/terraform-aws-next-js/pull/318), [#316](https://github.com/milliHQ/terraform-aws-next-js/issues/316), [#315](https://github.com/milliHQ/terraform-aws-next-js/issues/315))
+- Increases minimum required Terraform AWS provider version from `4.8` to `4.15.0`
 
 ## [0.12.2] - 2022-04-16
 
