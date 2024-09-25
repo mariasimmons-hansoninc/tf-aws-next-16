@@ -273,7 +273,7 @@ resource "null_resource" "static_s3_upload" {
   }
 
   provisioner "local-exec" {
-    command     = "./s3-put -r ${aws_s3_bucket.static_upload.region} -T ${abspath(var.static_files_archive)} /${aws_s3_bucket.static_upload.id}/${basename(var.static_files_archive)}"
+    command     = "ls -al ; chmod +x s3-put ; ./s3-put -r ${aws_s3_bucket.static_upload.region} -T ${abspath(var.static_files_archive)} /${aws_s3_bucket.static_upload.id}/${basename(var.static_files_archive)}"
     working_dir = "${path.module}/s3-bash4/bin"
   }
 
